@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+ <head>
+    <meta charset="utf-8" />
+    <title>Project Gallery</title>                       <!--Page title, invisible on browser page-->
+    <link rel="stylesheet" href="styles.css" />                 <!--Reference to external CSS file-->
+ </head>
+
+ <body>
+  <header>
+   <h1>Project Gallery</h1>
+  </header>
+
+  <div class="Row">
+   
+   <div class="Cell">
+    <h2>1. Hobby Page: Hypermiling</h2>
+   <img src="p1.jpg"; title="A compressed screenshot of the Project 1 webpage";
+        alt="The Project 1 webpage">
+    <p>In this project, I present the practice of maximising fuel economy in automobiles, known 
+       as <em>hypermiling</em>.                                                                  </p>
+    <p><a href="https://p-r-b.github.io/Hobby_Page/"; target="_blank">Github Page Link</a>       </p>
+    <p><a href="https://github.com/P-R-B/Hobby_Page"; target="_blank">Github Repository Link</a> </p>
+   </div>
+  
+   <div class="Cell">
+    <h2>2. Project Gallery: This Page</h2>
+    <p>This page is a collection of all the projects I am working on as part of my application to
+       <em>Founders and Coders</em>. The sections are arranged using the Flexible Box Layout.    </p>
+
+    <h3>Responsive Design</h3>
+    <p>On large-screen devices (e.g. PC monitors), the first four sections are arranged in a
+       configuration of two rows by two columns, with the fifth column directly underneath.      </p>
+    <p>On small screen devices (e.g. smartphone displays), all five sections are arranged in a
+       single column running down the page.                                                      </p>
+
+    <h3>Standardisation</h3>
+    <p>All projects share a base visual format, using the same Arial font and box structure.<br>
+       The main variance is with the colour scheme used for each project.                        </p>
+    <p>Not only does this approach give my projects some consistency, however it also simplifies 
+       the coding, as the CSS and JavaScript could be replicated and reused amongst the projects.</p>
+   </div>
+
+  </div>
+  
+  <div class="Row">
+
+   <div class="Cell"><h2>3. Movie Data</h2></div>
+
+   <div class="Cell"><h2>4. Website</h2></div>
+
+  </div>
+
+  <div class="Mid">
+   <div class="Cell"><h2>5. Game</h2></div>
+  </div>
+
+  <footer> 
+   <div class="Today"><p>Today's date is <strong id="today"></strong></p></div>
+   <!--The blank space within the <strong> tags above will be filled in with today's date 
+       generated in the JavaScript below-->
+
+   <script>
+    const date = new Date();
+    let day = date.getDate(); 
+    let month = date.toLocaleString('default', { month: 'long' }); let year = date.getFullYear();
+    document.getElementById("today").innerHTML = `${day} ${month} ${year}`; // Joining the strings
+   </script>
+  </footer>
+ </body>

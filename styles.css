@@ -1,0 +1,28 @@
+body {font-family: Arial, sans-serif; background-color: rgb(200, 200, 200)}
+
+.Row {display: flex; flex-direction: row; justify-content: space-evenly}
+@media screen and (max-width: 1000px){.Row {display: flex; flex-direction: column;
+box-sizing: border-box; align-items: center}}
+
+.Mid {display: flex; box-sizing: border-box; justify-content: center}
+
+.Cell {width: 500px; height: 700px; background-color: rgb(250, 250, 140); 
+       border-style: solid; border-color: blueviolet; border-width: thick; margin-bottom: 50px}
+.Cell:hover {background-color: white; border-color: yellow}
+
+h1 {padding: 10px 10px 10px 10px; 
+    -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: purple;
+    font-size: 3em; color: white; 
+    background: linear-gradient(to right, black 30%, purple 90%)}
+
+h2 {padding-left: 3px; color:yellow; background-color: blueviolet;
+    -webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: black }
+h2:hover {color: blueviolet; background-color: yellow}
+
+h3 {padding-left: 5px}
+
+p {margin-left: 10px; margin-right: 10px}
+
+img {box-sizing: border-box; border-style: solid; border-width: thin; max-width: 100%}
+
+.Today {text-align: center; font-size: 2em}
