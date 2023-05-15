@@ -6,7 +6,7 @@ box-sizing: border-box; align-items: center}}
 
 .Mid {display: flex; box-sizing: border-box; justify-content: center}
 
-.Cell {width: 500px; height: 700px; background-color: rgb(250, 250, 140); 
+.Cell {width: 500px; height: 700px; background-color: rgb(250, 250, 140); position: relative; 
        border-style: solid; border-color: blueviolet; border-width: thick; margin-bottom: 50px}
 .Cell:hover {background-color: white; border-color: yellow}
 
@@ -24,5 +24,12 @@ h3 {padding-left: 5px}
 p {margin-left: 10px; margin-right: 10px}
 
 img {box-sizing: border-box; border-style: solid; border-width: thin; max-width: 100%}
+
+.Bottom {position: absolute; bottom: 10px; width: inherit}
+
+.Line {display: flex; flex-direction: row; justify-content: space-between;
+       margin-left: 10px; margin-right: 10px                              } 
+
+.Bottom p {text-align: center; margin-bottom: 0}
 
 .Today {text-align: center; font-size: 2em}
