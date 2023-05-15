@@ -1,7 +1,7 @@
 # Project-Gallery
 Collection of all my projects for my Founders and Coders application
 
-Page available at: https://p-r-b.github.io/Project-Gallery/
+Webpage available at: https://p-r-b.github.io/Project-Gallery/
 
 Each section covers each project I have worked on. They are arranged on the page using the flexible box design CSS feature, and are responsive to the screen size, arranged in a 2x2 configuration on larger displays and in a single column on smaller displays.
 
